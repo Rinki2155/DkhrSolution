@@ -1,85 +1,78 @@
-import React from 'react';
+import React from "react";
+import { Form, Button, Col, Row } from "react-bootstrap";
+import SliderPage from "./SliderPage";
 
 function HomePage() {
   return (
     <div className="container-fluid">
-      {/* Header */}
-      <header className="d-flex justify-content-between align-items-center p-3 bg-light">
-        <img src="https://via.placeholder.com/150x50" alt="Logo" />
-        <button className="btn btn-warning">ENQUIRY NOW</button>
-      </header>
-
-      {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-primary">
-        <div className="container">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#">Home</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
-                About Us
+      <SliderPage />
+      <div className="container mt-5">
+        <div className="row">
+          {/* Contact Form */}
+          <div className="col-md-8">
+            <h3 style={{ color: "#ff6600" }}>
+              CONTACT INTELLECT RESOURCE ASIA
+            </h3>
+            <p>
+              For any information please fill the form below or write to us at:
+              <a href="mailto:id-hr@intellectresourceasia.com">
+                {" "}
+                id-hr@intellectresourceasia.com
               </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Company Overview</a></li>
-                <li><a className="dropdown-item" href="#">Team Intellect Resource</a></li>
-                <li><a className="dropdown-item" href="#">Our Differentiator</a></li>
-                <li><a className="dropdown-item" href="#">Work @ Intellect Resource</a></li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#">Services</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#">Vision</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#">Openings</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            </p>
+            <Form>
+              <Row className="mb-3">
+                <Form.Group as={Col} controlId="formName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter your name" />
+                </Form.Group>
+              </Row>
+              <Row className="mb-3">
+                <Form.Group as={Col} controlId="formEmail">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" placeholder="Enter your email" />
+                </Form.Group>
+              </Row>
+              <Row className="mb-3">
+                <Form.Group as={Col} controlId="formPhone">
+                  <Form.Label>Phone No</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter your phone number"
+                  />
+                </Form.Group>
+              </Row>
+              <Form.Group className="mb-3" controlId="formMessage">
+                <Form.Label>Message</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  placeholder="Enter your message"
+                />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Form>
+          </div>
 
-      {/* Main Banner */}
-      <div className="banner text-center p-5" style={{ background: 'linear-gradient(to top, #e0f7e0, white)' }}>
-        <h1 className="display-5">
-          HOT SPOT FOR <span style={{ color: 'orange' }}>JOB SEEKERS</span> AND <span style={{ color: 'orange' }}>EMPLOYERS</span>
-        </h1>
-      </div>
-
-      {/* Services Section */}
-      <div className="row text-center py-5 bg-info text-white">
-        <div className="col">
-          <h2>01</h2>
-          <p>Professional Services</p>
-        </div>
-        <div className="col">
-          <h2>02</h2>
-          <p>Consulting Services</p>
-        </div>
-        <div className="col">
-          <h2>03</h2>
-          <p>Human Resource Outsourcing</p>
-        </div>
-      </div>
-
-      {/* Job & Candidate Sections */}
-      <div className="row text-center py-5">
-        <div className="col-md-6">
-          <h3>ARE YOU LOOKING FOR A JOB?</h3>
-          <p>
-            Whether you are looking for a permanent, contract, or contract-to-hire position, 
-            we’ll work diligently to find the right job for you.
-          </p>
-        </div>
-        <div className="col-md-6">
-          <h3>ARE YOU LOOKING FOR A CANDIDATE?</h3>
-          <p>
-            Contact our offices for a focused search for your next ideal candidate.
-          </p>
+          {/* Map Section */}
+          <div className="col-md-4">
+            <div
+              className="map-container mt-4"
+              style={{ maxWidth: "100%", height: "300px" }}
+            >
+              <iframe
+                title="location-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.586108960361!2d77.08381291501798!3d28.504606982469755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d194fb197b2b1%3A0x6bcf34ad02e8c4e9!2sDLF%20City%20Court!5e0!3m2!1sen!2sin!4v1631200195814!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>

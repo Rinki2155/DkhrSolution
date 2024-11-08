@@ -7,7 +7,7 @@
 }
 .header-container {
   background-color: #f8f9fa; /* Light background to match */
-  border-bottom: 15px solid #00aaff; /* Blue border under header */
+  border-bottom: 15px solid #2FB2DB; /* Blue border under header */
 }
 
 .header-logo {
@@ -28,8 +28,8 @@
 }
 /* Navbar Styles */
 .custom-navbar {
-  background-color: #00aaff; /* Blue background */
-  border-bottom: 2px solid #007acc; /* Slightly darker bottom border */
+  background-color: #2FB2DB; /* Blue background */
+  border-bottom: 2px solid #2FB2DB; /* Slightly darker bottom border */
   padding: 10px 0;
 }
 
@@ -64,7 +64,7 @@
 
 /* Dropdown Styles */
 #about-dropdown .dropdown-menu {
-  background-color: #00aaff;
+  background-color: #2FB2DB;
   border: none;
   color: white;
 }
@@ -75,7 +75,7 @@
 }
 
 #about-dropdown .dropdown-item:hover {
-  background-color: #007acc;
+  background-color: #2FB2DB;
 }
 
 /* Responsive Styles */

@@ -5,13 +5,12 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Header from "./components/Header";
-import CustomNavbar from "./components/CustomNavbar";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <div>
       <Header />
-      <CustomNavbar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/overview" element={<h2>Company Overview</h2>} />
@@ -21,7 +20,7 @@ function App() {
         <Route path="/services" element={<h2>Services Page</h2>} />
         <Route path="/vision" element={<h2>Vision Page</h2>} />
         <Route path="/openings" element={<h2>Openings Page</h2>} />
-        <Route path="/contact" element={<h2>Contact Us</h2>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
       {/* <Footer /> */}
     </div>

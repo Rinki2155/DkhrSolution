@@ -6,6 +6,10 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Header from "./components/Header";
 import Contact from "./components/Contact";
+import AboutUs from "./components/AboutUs";
+import Footer from "./components/Footer";
+import Service from "./components/Service";
+import Openings from "./components/Openings";
 
 function App() {
   return (
@@ -13,16 +17,18 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/overview" element={<h2>Company Overview</h2>} />
-        <Route path="/team" element={<h2>Team Intellect Resource</h2>} />
+                <Route path="/about" element={<AboutUs/>} />
+
+        {/* <Route path="/overview" element={<h2>Company Overview</h2>} /> */}
+        {/* <Route path="/team" element={<h2>Team Intellect Resource</h2>} />
         <Route path="/differentiator" element={<h2>Our Differentiator</h2>} />
-        <Route path="/work" element={<h2>Work @ Intellect Resource</h2>} />
-        <Route path="/services" element={<h2>Services Page</h2>} />
-        <Route path="/vision" element={<h2>Vision Page</h2>} />
-        <Route path="/openings" element={<h2>Openings Page</h2>} />
+        <Route path="/work" element={<h2>Work @ Intellect Resource</h2>} /> */}
+        <Route path="/services" element={<Service/>} />
+        {/* <Route path="/vision" element={<h2>Vision Page</h2>} /> */}
+        <Route path="/openings" element={<Openings/>} />
         <Route path="/contact" element={<Contact/>} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer/>
     </div>
   );
 }

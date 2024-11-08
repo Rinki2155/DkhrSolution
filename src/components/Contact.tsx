@@ -7,8 +7,8 @@ function Contact() {
       {/* Centering the Row with d-flex and justify-content-center */}
       <div className="row d-flex justify-content-center">
         {/* Contact Form */}
-        <div className="col-md-6 mx-auto">
-          <h3 style={{ color: "#ff6600" }}>CONTACT INTELLECT RESOURCE ASIA</h3>
+        <div className="col-md-10 mx-auto">
+          <h3 style={{ color: "#39508E" }}>CONTACT INTELLECT RESOURCE ASIA</h3>
           <p>
             For any information please fill the form below or write to us at:
             <a href="mailto:id-hr@intellectresourceasia.com">

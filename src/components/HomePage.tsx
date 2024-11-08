@@ -10,7 +10,7 @@ function HomePage() {
         <div className="row">
           {/* Contact Form */}
           <div className="col-md-8">
-            <h3 style={{ color: "#ff6600" }}>
+            <h3 style={{ color: "#39508E" }}>
               CONTACT INTELLECT RESOURCE ASIA
             </h3>
             <p>
@@ -50,7 +50,7 @@ function HomePage() {
                   placeholder="Enter your message"
                 />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              <Button variant="primary" type="submit" style={{backgroundColor:'#39508E'}}>
                 Submit
               </Button>
             </Form>

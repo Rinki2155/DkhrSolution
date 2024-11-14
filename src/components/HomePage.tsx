@@ -15,9 +15,9 @@ function HomePage() {
             </h3>
             <p>
               For any information please fill the form below or write to us at:
-              <a href="mailto:id-hr@intellectresourceasia.com">
+              <a href="mailto:id-hr@dkhrsolutions.com">
                 {" "}
-                id-hr@intellectresourceasia.com
+                id-hr@dkhrsolutions.com
               </a>
             </p>
             <Form>

@@ -36,7 +36,7 @@ const services = [
 
 function SliderPage() {
   return (
-    <Container>
+    <Container className='container'>
       {/* Carousel Section */}
       <Carousel fade={true} indicators={false} controls={false} interval={4000}>
         {carouselItems.map((item) => (
@@ -44,15 +44,14 @@ function SliderPage() {
             <div style={{ display: 'flex', flexDirection: 'row', height: '400px' }} className="carousel-content">
               {/* Text Section */}
               <div
-                className="carousel-text p-4 d-flex align-items-center"
+                className="carousel-text d-flex align-items-center"
                 style={{
-                  // backgroundColor: '#2FB2DB',
                   color: '#39508E',
                   flex: '1 1 50%',
                   // textAlign: 'center',
                 }}
               >
-                <h2 style={{ fontWeight: 'bold', fontSize: '34px', lineHeight: '1.5' }}>
+                <h2 style={{ fontWeight: 'bold', fontSize: '38px', lineHeight: '1.5' }}>
                   {item.text}
                 </h2>
               </div>
@@ -81,7 +80,7 @@ function SliderPage() {
       <Row className="text-center mt-4">
         {services.map((service) => (
           <Col key={service.number} md={4} className="p-1">
-            <div style={{ backgroundColor: '#2FB2DB', color: 'white', padding: '20px' }}>
+            <div style={{ backgroundColor: '#2FB2DB', color: 'white', padding: '15px' }}>
               <h2>{service.number}</h2>
               <h5>{service.title}</h5>
             </div>

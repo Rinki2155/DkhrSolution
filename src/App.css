@@ -56,10 +56,10 @@
 
 /* Divider styling */
 .divider {
-  height: 30px;
-  width: 1px;
+  height: 40px;
+  width: 2px;
   background-color: white;
-  margin: 0 10px;
+  margin: 0 30px;
 }
 
 /* Responsive Styles */
@@ -87,7 +87,12 @@
     order: 1;
   }
 }
-
+h2{
+  color: #39508E !important;
+}
+h3{
+  color: #39508E !important;
+}
 /* Footer General Styles */
 .footer {
   padding-top: 80px;

@@ -58,7 +58,7 @@
 
 //             {/* <Nav.Link as={Link} to="/vision" className="nav-link-custom">
 //               Vision
-//             </Nav.Link> 
+//             </Nav.Link>
 //             <span className="divider" />*/}
 
 //             <Nav.Link as={Link} to="/openings" className="nav-link-custom">
@@ -92,17 +92,17 @@ function Header() {
 
   return (
     <>
-          <div className="header-container"></div>
+      <div className="header-container"></div>
 
-        <div className="container d-flex justify-content-between align-items-center px-5 py-3">
-          <img
-            src="Image/logo.jpg"
-            alt="Intellect Resource Logo"
-            className="header-logo"
-          />
-          {/* Optional Enquiry Button */}
-          {/* <button className="btn header-btn">ENQUIRY NOW</button> */}
-        </div>
+      <div className="container d-flex justify-content-between align-items-center px-5 py-3">
+        <img
+          src="Image/logo.jpg"
+          alt="Intellect Resource Logo"
+          className="header-logo"
+        />
+        {/* Optional Enquiry Button */}
+        {/* <button className="btn header-btn">ENQUIRY NOW</button> */}
+      </div>
 
       <Navbar className="custom-navbar container" expand="lg" variant="light">
         <Container>

@@ -1,53 +1,67 @@
-import React from 'react';
+import React from "react";
 
-const Openings: React.FC = () => {
+const OpeningPage: React.FC = () => {
   return (
     <div className="container-sm">
-      <div className="about-container py-5">
-        <h2 className="py-1 text-primary">Our Opening Details</h2>
+      <div className="hero-section py-5">
+        <h2 className="py-1">Welcome to DK HR Solutions</h2>
         <p>
-          <strong>Dk HR Solutions</strong> is a DIY Travel Information Company based in Bellevue, WA, USA.
-          We provide helpful travel videos and precise travel information across a wide range of topics for destinations in Asia, the US, and Canada.
+          <strong>DK HR Solutions</strong> provides expert Human Resource consultancy to privately owned businesses across India. We offer comprehensive HR solutions that drive growth, enhance productivity, and ensure compliance with local regulations.
         </p>
-        
-        <section className="my-4">
-          <h4 className="text-secondary">Our Policy & Privacy</h4>
-          <p>
-            Dk HR Solutions was created out of a desire to find organized, helpful travel information in one place. Our mission is to "Make Travel Easy" for everyone.
-          </p>
-          <p>
-            We aim to equip travelers with accurate, specific, and practical travel information. Our platform offers informative travel videos and up-to-date destination details, including local tips for destinations in Asia, the US, and Canada.
-          </p>
-          <p>
-            Dk HR Solutions provides information covering logistics, local transportation, hotel recommendations, top attractions, and more, consolidating everything in one convenient location.
-          </p>
-          <p>
-            Our resources are useful for travelers before, during, and after their trips, helping them maximize their experience at each destination.
-          </p>
-        </section>
-
-        <section className="my-4">
-          <h4 className="text-secondary">Our Mission</h4>
-          <p>
-            At Dk HR Solutions, we strive to offer relevant, up-to-date information to help travelers plan and optimize their DIY travel experiences. We produce a range of detailed travel videos and city guides, providing practical tips for destinations in Asia, the US, and Canada.
-          </p>
-          <p>
-            Our content is grounded in real travel experiences by the Dk HR Solutions team. We ensure accuracy by visiting destinations, collaborating with local guides, and staying updated with the latest information.
-          </p>
-          <p>
-            Our travel guides are available on our website and YouTube channel, "Dk HR Solutions Travel-Channel."
-          </p>
-        </section>
-
-        <section className="my-4">
-          <h4 className="text-secondary">How It Works</h4>
-          <p>
-            Get social with Dk HR Solutions! Subscribe to our YouTube channel and follow us on Twitter, Facebook, and Instagram to join our travel community.
-          </p>
-        </section>
+        <p>
+          Our mission is to transform your HR processes through customized strategies that align with your business objectives. Whether you need assistance with employee relations, performance management, policy development, or workforce training, we are here to help your business thrive.
+        </p>
       </div>
+
+      <section className="my-4">
+        <h4 className="text-secondary">Our Expertise</h4>
+        <p>
+          DK HR Solutions is committed to delivering tailored HR services that meet the unique needs of your business. We focus on providing strategic HR solutions that help you build a compliant, engaged, and high-performing workforce.
+        </p>
+        <div className="row mt-4">
+          <div className="col-md-6 py-3">
+            <h3>HR Consultation</h3>
+            <p>Expert advice on building effective HR practices and policies for your business.</p>
+          </div>
+          <div className="col-md-6 py-3">
+            <h3>Policy Development</h3>
+            <p>Create robust HR policies and procedures that support business growth and compliance.</p>
+          </div>
+          <div className="col-md-6 py-3">
+            <h3>Employee Relations</h3>
+            <p>Guidance on handling employee relations issues to maintain a positive workplace culture.</p>
+          </div>
+        </div>
+        <div className="text-center mt-4">
+          <a href="/services" className="btn btn-primary py-2 px-4" style={{backgroundColor:'#39508E'}}>
+            Explore Our Services
+          </a>
+        </div>
+      </section>
+
+      <section className="my-4">
+        <h2 className="text-secondary">Why Choose DK HR Solutions?</h2>
+        <p>
+          Our personalized approach and years of expertise make us a trusted partner for HR solutions. We work closely with business owners to understand their unique challenges and provide practical, results-driven strategies that create a positive impact.
+        </p>
+        <div className="row mt-4">
+          <div className="col-md-6 py-3">
+            <h3>Tailored Solutions</h3>
+            <p>We create HR solutions that are customized to fit your business needs, helping you achieve success.</p>
+          </div>
+          <div className="col-md-6 py-3">
+            <h3>Experienced Team</h3>
+            <p>Our team of experienced HR professionals provides expert guidance and support at every step.</p>
+          </div>
+        </div>
+        <div className="text-center mt-4">
+          <a href="/about" className="btn btn-primary py-2 px-4" style={{backgroundColor:'#39508E'}}>
+            Get to Know Us Better
+          </a>
+        </div>
+      </section>
     </div>
   );
 };
 
-export default Openings;
+export default OpeningPage;

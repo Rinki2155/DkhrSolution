@@ -8,12 +8,12 @@ function Contact() {
       <div className="row d-flex justify-content-center">
         {/* Contact Form */}
         <div className="col-md-10 mx-auto">
-          <h3 style={{ color: "#39508E" }}>CONTACT INTELLECT RESOURCE ASIA</h3>
+          <h2 style={{ color: "#39508E" }}>CONTACT INTELLECT RESOURCE ASIA</h2>
           <p>
             For any information please fill the form below or write to us at:
-            <a href="mailto:id-hr@intellectresourceasia.com">
+            <a href="mailto:id-hr@dkhrsolutions.com">
               {" "}
-              id-hr@intellectresourceasia.com
+              id-hr@dkhrsolutions.com
             </a>
           </p>
           <Form>

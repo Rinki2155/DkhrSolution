@@ -1,68 +1,58 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 
 const AboutUs: React.FC = () => {
   return (
-    <Container className="py-5">
-      <div className="about-container">
-        <h2 className="pb-3">About Us</h2>
+    <div className="container-sm">
+      <div className="about-container py-5">
+        <h2 className="py-1">About Us</h2>
         <p>
-          Dk Hr Solutions is a DIY Travel Information Company based out of
-          Bellevue, WA (US). We provide helpful travel videos and precise travel
-          information on a wide range of topics for destinations across Asia,
-          the US, and Canada.
+          <strong>DK HR Solutions</strong> is a trusted Human Resource consultancy dedicated to supporting privately owned businesses in India with comprehensive HR solutions. Our mission is to help businesses optimize their workforce by offering tailored HR management and consultative expertise that addresses each organization’s unique needs.
         </p>
 
-        <section className="mt-4">
-          <h3>Our Company</h3>
+        <section className="my-4">
+          <h4 className="text-secondary">Our Expertise</h4>
           <p>
-            Dk Hr Solutions was born out of a desire to find helpful travel
-            information organized together in one place. Our goal is to "Make
-            Travel Easy" for everyone by offering accurate, specific, and useful
-            information to fellow travelers.
+            At DK HR Solutions, we bring deep industry knowledge and extensive experience in all areas of Human Resource management. From designing effective HR policies to implementing best practices, our team ensures that business owners have the right tools and guidance to build compliant, engaged, and productive workplaces.
           </p>
           <p>
-            On our site, you will find informative travel videos, up-to-date
-            destination information, and local tips for visiting destinations in
-            Asia, the US, and Canada. We cover logistical details like arrival,
-            local transport, hotel recommendations, top attractions, and local
-            travel tips, all in one place.
-          </p>
-          <p>
-            Travelers use our services before, during, and after their trips.
-            Dk Hr Solutions helps them maximize their experiences by providing
-            relevant, up-to-date information tailored for DIY travel.
+            Our focus is to empower companies to manage their HR functions confidently and effectively. We assist with policy development, employee relations, and creating performance-driven cultures that support growth and align with business goals.
           </p>
         </section>
 
-        <section className="mt-4">
-          <h3>Our Approach</h3>
+        <section className="my-4">
+          <h4 className="text-secondary">What We Do</h4>
           <p>
-            Our travel information and video guides are based on real-life
-            experiences by Dk Hr Solutions team members. We ensure accuracy by
-            visiting destinations, collaborating with local guides, and keeping
-            our information current.
+            DK HR Solutions provides a wide range of HR services that address every critical aspect of human resource management:
+          </p>
+          <ul>
+            <li>Developing and implementing Human Resource policies and procedures tailored to the specific needs of each business.</li>
+            <li>Creating employee handbooks, structured performance appraisal processes, and job descriptions that drive clarity and consistency in employee roles.</li>
+            <li>Guiding business owners on complex employee relations issues, including handling cases related to harassment, discrimination, and workplace morale.</li>
+            <li>Providing comprehensive training solutions for employees and managers, equipping teams with the skills needed to foster a healthy, productive workplace.</li>
+          </ul>
+        </section>
+
+        <section className="my-4">
+          <h4 className="text-secondary">Our Mission</h4>
+          <p>
+            Our mission at DK HR Solutions is to help businesses streamline their HR operations by delivering expert HR consultancy and support. We aim to create positive, compliant work environments where businesses and their employees can thrive together.
           </p>
           <p>
-            Our travel guides are easy to use, with a consistent format that
-            helps travelers plan and execute trips seamlessly. From travel
-            planning, airport and public transport information, to hotels, top
-            attractions, and city-specific travel tips, Dk Hr Solutions has
-            everything in one place.
+            By working closely with our clients, we offer guidance that enhances their HR functions, helping them manage workforce challenges effectively and proactively.
           </p>
         </section>
 
-        <section className="mt-4">
-          <h3>How It Works</h3>
+        <section className="my-4">
+          <h4 className="text-secondary">Why Choose DK HR Solutions?</h4>
           <p>
-            Get Social with Dk Hr Solutions! Be sure to subscribe to the Dk Hr Solutions
-            Travel channel on YouTube and follow us on Twitter, Facebook, and
-            Instagram. Join our online travel community and connect with fellow
-            travelers!
+            We are committed to providing high-quality HR services with integrity, reliability, and a genuine dedication to our clients’ success. Our consultative approach allows us to understand each client’s unique needs and provide personalized solutions that deliver real impact. 
+          </p>
+          <p>
+            With DK HR Solutions, you gain a trusted HR partner that is as invested in your success as you are. Let us support your business with the expertise and resources to build a resilient, productive team.
           </p>
         </section>
       </div>
-    </Container>
+    </div>
   );
 };
 

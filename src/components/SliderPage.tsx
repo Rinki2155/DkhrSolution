@@ -29,46 +29,38 @@ const carouselItems = [
   },
 ];
 const services = [
-    { number: "01", title: "PROFESSIONAL SERVICES", description: "" },
-    { number: "02", title: "CONSULTING SERVICES", description: "" },
-    { number: "03", title: "HUMAN RESOURCE OUTSOURCING", description: "" },
-  ];
+  { number: "01", title: "PROFESSIONAL SERVICES", description: "" },
+  { number: "02", title: "CONSULTING SERVICES", description: "" },
+  { number: "03", title: "HUMAN RESOURCE OUTSOURCING", description: "" },
+];
 
 function SliderPage() {
   return (
-    <Container className='container'>
+    <Container className="container">
       {/* Carousel Section */}
       <Carousel fade={true} indicators={false} controls={false} interval={4000}>
         {carouselItems.map((item) => (
           <Carousel.Item key={item.id}>
-            <div style={{ display: 'flex', flexDirection: 'row', height: '400px' }} className="carousel-content">
+            <div
+              className="carousel-content"
+              style={{
+                backgroundImage: `url(${item.image})`, // Set background image for mobile
+              }}
+            >
+              {/* Overlay layer */}
+              <div className="carousel-overlay"></div>
+
               {/* Text Section */}
-              <div
-                className="carousel-text d-flex align-items-center"
-                style={{
-                  color: '#39508E',
-                  flex: '1 1 50%',
-                  // textAlign: 'center',
-                }}
-              >
-                <h2 style={{ fontWeight: 'bold', fontSize: '38px', lineHeight: '1.5' }}>
-                  {item.text}
-                </h2>
+              <div className="carousel-text">
+                <h2>{item.text}</h2>
               </div>
 
-              {/* Image Section */}
-              <div
-                style={{
-                  flex: '1 1 50%',
-                  height: '100%',
-                  overflow: 'hidden',
-                }}
-              >
+              {/* Image Section for Desktop */}
+              <div className="carousel-image">
                 <img
                   src={item.image}
                   alt={`Slide ${item.id}`}
                   className="d-block w-100"
-                  style={{ objectFit: 'cover', height: '100%' }}
                 />
               </div>
             </div>
@@ -77,10 +69,10 @@ function SliderPage() {
       </Carousel>
 
       {/* Service Boxes Section */}
-      <Row className="text-center mt-4">
+      <Row className="services-container">
         {services.map((service) => (
           <Col key={service.number} md={4} className="p-1">
-            <div style={{ backgroundColor: '#2FB2DB', color: 'white', padding: '15px' }}>
+            <div className="service-box">
               <h2>{service.number}</h2>
               <h5>{service.title}</h5>
             </div>

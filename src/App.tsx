@@ -10,6 +10,7 @@ import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import Service from "./components/Service";
 import Openings from "./components/Openings";
+import OpeningPage from "./components/Openings";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         {/* <Route path="/vision" element={<h2>Vision Page</h2>} /> */}
         <Route path="/openings" element={<Openings/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/" element={<OpeningPage/>} />
+        <Route path="/about" element={<AboutUs/>} />
       </Routes>
       <Footer/>
     </div>

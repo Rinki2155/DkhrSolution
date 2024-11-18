@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
         {/* Bottom Footer Section */}
         <div className="footer-bottom mt-5 py-4">
           <div className="text-center">
-            <p>COPYRIGHT © 2013-14 DK HR Solutions. ALL RIGHTS RESERVED</p>
+            <p>COPYRIGHT ©2024  DK HR Solutions. ALL RIGHTS RESERVED</p>
             <p>DESIGNED AND DEVELOPED BY INDWARE</p>
           </div>
         </div>

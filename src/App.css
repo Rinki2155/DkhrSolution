@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-size: 16px;
+  color: #39508e;
   font-family: 'PTSansNarrowRegular', sans-serif;
 }
 
@@ -77,8 +79,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(0deg, rgb(229 216 216 / 90%), rgb(242 228 228 / 90%), rgb(16 17 17 / 0%));
-    z-index: 1;
+    background: linear-gradient(0, #0f0f0fd6 47.21%, #0f0f0f 56.75%, rgb(7 25 41 / 0%) 85.25%);    z-index: 1;
   }
   .carousel-text {
     position: absolute;
@@ -89,8 +90,13 @@
     color: white;
     text-align: center;
   }
+.container{
+  --bs-gutter-x: 4rem !important;
+}
+.image-container{
+  --bs-gutter-x: 0rem !important;
 
-
+}
   .service-box {
     padding: 15px;
   }
@@ -156,13 +162,19 @@
   .divider {
     display: none; /* Hide dividers in mobile view */
   }
+  h2{
+    color: #fff ;
+  }
+  h3{
+    color: #ffff ;
+  }
 }
 
 h2{
-  color: #39508E !important;
+  color: #39508E ;
 }
 h3{
-  color: #39508E !important;
+  color: #39508E ;
 }
 /* Footer General Styles */
 .footer {
@@ -170,7 +182,7 @@ h3{
 }
 
 .footer-heading {
-  color: #39508E;
+  color: white;
   margin-bottom: 1rem;
 }
 
@@ -226,7 +238,7 @@ h3{
 /* Footer Bottom Section */
 .footer-bottom {
   background-color: #39508E;
-  color: white;
+  color: white !important;
   padding: 10px 0;
   text-align: center;
   font-size: 0.85rem;
@@ -234,10 +246,13 @@ h3{
 
 .footer-bottom p {
   margin: 0;
+  color: white;
+
 }
 
 .footer-bottom p + p {
   margin-top: 5px;
+  color: white;
 }
 
 /* Responsive Adjustments */

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="container-sm">
+    <div className="container">
       <div className="about-container py-5">
         <h2 className="py-1">About Us</h2>
         <p>
@@ -10,7 +10,7 @@ const AboutUs: React.FC = () => {
         </p>
 
         <section className="my-4">
-          <h4 className="text-secondary">Our Expertise</h4>
+          <h4>Our Expertise</h4>
           <p>
             At DK HR Solutions, we bring deep industry knowledge and extensive experience in all areas of Human Resource management. From designing effective HR policies to implementing best practices, our team ensures that business owners have the right tools and guidance to build compliant, engaged, and productive workplaces.
           </p>
@@ -20,7 +20,7 @@ const AboutUs: React.FC = () => {
         </section>
 
         <section className="my-4">
-          <h4 className="text-secondary">What We Do</h4>
+          <h4>What We Do</h4>
           <p>
             DK HR Solutions provides a wide range of HR services that address every critical aspect of human resource management:
           </p>
@@ -33,7 +33,7 @@ const AboutUs: React.FC = () => {
         </section>
 
         <section className="my-4">
-          <h4 className="text-secondary">Our Mission</h4>
+          <h4>Our Mission</h4>
           <p>
             Our mission at DK HR Solutions is to help businesses streamline their HR operations by delivering expert HR consultancy and support. We aim to create positive, compliant work environments where businesses and their employees can thrive together.
           </p>
@@ -43,7 +43,7 @@ const AboutUs: React.FC = () => {
         </section>
 
         <section className="my-4">
-          <h4 className="text-secondary">Why Choose DK HR Solutions?</h4>
+          <h4>Why Choose DK HR Solutions?</h4>
           <p>
             We are committed to providing high-quality HR services with integrity, reliability, and a genuine dedication to our clients’ success. Our consultative approach allows us to understand each client’s unique needs and provide personalized solutions that deliver real impact. 
           </p>

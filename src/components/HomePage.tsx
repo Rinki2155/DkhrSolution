@@ -4,8 +4,10 @@ import SliderPage from "./SliderPage";
 
 function HomePage() {
   return (
-    <div className="container-fluid">
-      <SliderPage />
+<>
+<SliderPage />
+
+<div className="container-fluid">
       <div className="container mt-5">
         <div className="row">
           {/* Contact Form */}
@@ -75,7 +77,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-    </div>
+    </div></>
   );
 }
 

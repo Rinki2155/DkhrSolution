@@ -2,7 +2,7 @@ import React from "react";
 
 const OpeningPage: React.FC = () => {
   return (
-    <div className="container-sm">
+    <div className="container">
       <div className="hero-section py-5">
         <h2 className="py-1">Welcome to DK HR Solutions</h2>
         <p>
@@ -14,7 +14,7 @@ const OpeningPage: React.FC = () => {
       </div>
 
       <section className="my-4">
-        <h4 className="text-secondary">Our Expertise</h4>
+        <h4>Our Expertise</h4>
         <p>
           DK HR Solutions is committed to delivering tailored HR services that meet the unique needs of your business. We focus on providing strategic HR solutions that help you build a compliant, engaged, and high-performing workforce.
         </p>
@@ -40,7 +40,7 @@ const OpeningPage: React.FC = () => {
       </section>
 
       <section className="my-4">
-        <h2 className="text-secondary">Why Choose DK HR Solutions?</h2>
+        <h2>Why Choose DK HR Solutions?</h2>
         <p>
           Our personalized approach and years of expertise make us a trusted partner for HR solutions. We work closely with business owners to understand their unique challenges and provide practical, results-driven strategies that create a positive impact.
         </p>

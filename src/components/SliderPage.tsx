@@ -20,7 +20,7 @@ const services = [
 
 function SliderPage() {
   return (
-    <Container className="container">
+    <Container className="image-container">
         <Carousel fade={true} indicators={false} controls={false} interval={2000}>
         {carouselItems.map((item) => (
           <Carousel.Item key={item.id}>
@@ -42,7 +42,9 @@ function SliderPage() {
           </Carousel.Item>
         ))}
       </Carousel>
-      <Row className="services-container">
+        <div className='container'>
+        <Row className="services-container">
+
         {services.map((service) => (
           <Col key={service.number} md={4} className="p-1">
             <div className="service-box">
@@ -52,6 +54,8 @@ function SliderPage() {
           </Col>
         ))}
       </Row>
+      </div>
+
     </Container>
   );
 }
